@@ -9,6 +9,7 @@ use App\Http\Requests\GifRequest;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use App\Gif;
+use DB;
 
 /*
 *  Controlador de Resource para CRUD de los GIFs
@@ -63,6 +64,7 @@ class GifsController extends Controller
                 $Gif->description = $request->description;
                 $name = $slug.'.'.$file->getClientOriginalExtension();
                 $Gif->gif = $name ;
+                $Gif->user_id= \Auth::user()->id;
                 $Gif->save();   
 
                 $request->file('gif')->storeAs('gifs',$name);
@@ -113,6 +115,7 @@ class GifsController extends Controller
                 $name = $slug.'.gif';
                 Storage::move('gifs/'.$Gif->gif, 'gifs/'.$name);
                 $Gif->gif = $name ;
+                $Gif->user_id= \Auth::user()->id;
                 $Gif->save();   
         Flash::success("Se ha actualizado el Gif <b>$Gif->title</b>");
 
