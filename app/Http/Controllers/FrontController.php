@@ -8,6 +8,9 @@ use App\Gif;
 
 class FrontController extends Controller
 {
+	/*
+	* Controlador principal para el front end
+	 */
     public function index()
     {
     	$gifs=Gif::orderBy('created_at','DESC')->paginate(10);

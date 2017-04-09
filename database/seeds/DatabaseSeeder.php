@@ -6,7 +6,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
+     * insert First user
      * @return void
      */
     public function run()

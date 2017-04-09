@@ -8,7 +8,7 @@ class CreateTableGifs extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * Create Table Gifs
      * @return void
      */
     public function up()
@@ -26,7 +26,7 @@ class CreateTableGifs extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     * Delete table Gifs
      * @return void
      */
     public function down()

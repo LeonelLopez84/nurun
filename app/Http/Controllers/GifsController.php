@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use App\Gif;
 
+/*
+*  Controlador de Resource para CRUD de los GIFs
+ */
 class GifsController extends Controller
 {
     public function __construct()
@@ -19,7 +22,7 @@ class GifsController extends Controller
 
     /**
      * Display a listing of the resource.
-     *
+     *  Listado de todos los Gifs con paginacion
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -30,22 +33,24 @@ class GifsController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * vista Formulario para la creacion de los gifs
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
+    
         return view("admin.gifs.create");
     }
 
     /**
      * Store a newly created resource in storage.
-     *
+     * Almacenamiento de los gifs
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(GifRequest $request)
     {
+
         
         if($request->file("gif")){
 
@@ -70,7 +75,7 @@ class GifsController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * 
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -81,7 +86,7 @@ class GifsController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
+     * Vista formulario pra editar titulo y descipcion de los gifs
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -93,7 +98,7 @@ class GifsController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
+     * actualizacion de los gifs
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -116,7 +121,7 @@ class GifsController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * Eliminacion del elemento
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -128,6 +133,13 @@ class GifsController extends Controller
 
         return redirect()->route('gifs.index');
     }
+
+    /**
+     * Autorizacion del elemento elemento via ajax
+    * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
 
     public function autorize(Request $request, $id)
     { 
