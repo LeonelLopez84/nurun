@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Gif extends Model
 {
-
+	/*
+	* Model Gif user 
+	* relationship with user
+	 */
 
     public function user()
     {

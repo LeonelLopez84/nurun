@@ -19,3 +19,23 @@
 			height: auto;
 		}
 }
+
+
+#front{
+	.body{
+		a{
+			font-size:1.25em;
+			color:#fff;
+		}
+		margin-top:60px;
+		@import "_pinterest";
+		#only-one{
+			padding-top:0px !important;
+			.work-wrapper{
+				position:relative !important;
+			}
+		}
+	}
+	
+		
+}

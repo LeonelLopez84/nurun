@@ -1,13 +1,24 @@
 @extends('layouts.master')
 
 @section('content')
-       <div class="container">
-       	<div class="row">
+<div class="container body">
+<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div"
+	<div class="col-xs-12 col-sm-12 col-md-12">
+  		<section id="pinBoot">
+
        		@foreach($gifs as $gif)
-       		<div class="col-xs-12 col-sm-6 col-md-4 col-md-3">
-       			<img class="img-responsive" src="{{url('gifs/'.$gif->gif)}}">
-       		</div>
+
+		      <article class="white-panel work-wrapper">
+				<a class="fancybox-media" title="{{$gif->title}}" href="{{url('gifs/'.$gif->gif)}}">
+		      		<img src="{{url('gifs/'.$gif->gif)}}" alt="">
+		      	</a>
+
+		        <h4><a href="{{url('gifs/show/'.$gif->slug)}}">{{$gif->title}}</a></h4>
+		      </article>
+
        		@endforeach
-       	</div>
-       </div>
+   	</section>
+	</div>
+	</div>
+	</div>
 @endsection

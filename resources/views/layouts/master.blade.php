@@ -10,8 +10,17 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="{{url('css/app.css')}}" rel="stylesheet">
+
+    <link href="{{url('css/ionicons.css')}}" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS STYLES -->
+    <link href="{{url('css/font-awesome.css')}}" rel="stylesheet" />
+    <!-- FANCYBOX POPUP STYLES -->
+    <link href="{{url('js/source/jquery.fancybox.css')}}" rel="stylesheet" />
+    <!-- STYLES FOR VIEWPORT ANIMATION -->
+    <link href="{{url('css/animations.min.css')}}" rel="stylesheet" />
+    <!-- CUSTOM CSS -->
+    <link href="{{url('css/style-solid-black.css')}}" rel="stylesheet" />
 
     <!-- Scripts -->
     <script>
@@ -20,73 +29,27 @@
         ]); ?>
     </script>
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
-                            <li><a href="{{ url('/register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ url('/admin/gifs') }}">
-                                            Admin
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('/logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+<body data-spy="scroll" data-target="#menu-section">
+    <div id="front">
+        @include('partials.navbar')
         @yield('content')
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+<script src="{{url('js/app.js')}}"></script>
+
+<script src="{{url('js/vegas/jquery.vegas.min.js')}}"></script>
+<!-- VEGAS SLIDESHOW SCRIPTS -->
+<script src="{{url('js/jquery.easing.min.js')}}"></script>
+<!-- FANCYBOX PLUGIN -->
+<script src="{{url('js/source/jquery.fancybox.js')}}"></script>
+<!-- ISOTOPE SCRIPTS -->
+<script src="{{url('js/jquery.isotope.js')}}"></script>
+<!-- VIEWPORT ANIMATION SCRIPTS   -->
+<script src="{{url('js/appear.min.js')}}"></script>
+
+<script src="{{url('js/animations.min.js')}}"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="{{url('js/custom-solid.js')}}"></script>
 </body>
 </html>

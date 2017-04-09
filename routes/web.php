@@ -20,6 +20,8 @@ Route::put('admin/gifs/{id}/autorize',['as' => 'gifs.autorize','uses' => 'GifsCo
 
 Route::get('/', 'FrontController@index');
 
+Route::get('/gifs/show/{slug}', 'FrontController@show');
+
 Route::get('gifs/{filename}',function($filename){
 	$path=storage_path("app/public/gifs/$filename");
 	if(!\File::exists($path)) abort(404);
