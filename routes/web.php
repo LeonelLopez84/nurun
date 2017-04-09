@@ -11,10 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+
+Route::resource('admin/gifs','GifsController');
+Route::put('admin/gifs/{id}/autorize',['as' => 'gifs.autorize','uses' => 'GifsController@autorize']);
+
+
+Route::get('/', 'FrontController@index');
+
+Route::get('gifs/{filename}',function($filename){
+	$path=storage_path("app/public/gifs/$filename");
+	if(!\File::exists($path)) abort(404);
+	$file = \File::get($path);
+	$type =\File::mimeType($path);
+	$response = Response::make($file,200);
+	$response->header("Content-Type",$type);
+	return $response;
+});
