@@ -20,6 +20,8 @@ class CreateTableGifs extends Migration
             $table->text('slug');
             $table->text('description');
             $table->tinyInteger('autorize')->default('0');
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('no action')->onUpdate('no action');
             $table->timestamps();
         });
     }
