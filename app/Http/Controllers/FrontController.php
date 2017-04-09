@@ -29,7 +29,7 @@ class FrontController extends Controller
         //obtenemos solo uno 
     	$gif=Gif::where('slug','=',$slug)->first();
         //obtenemos previo
-        $prev = Gif::where('autorize','=',1)->where('created_at','>', $gif->created_at)->orderBy('created_at','DESC')->first();
+        $prev = Gif::where('autorize','=',1)->where('created_at','>', $gif->created_at)->orderBy('created_at','ASC')->first();
         // obtenemos el siguiente
         $next = Gif::where('autorize','=',1)->where('created_at','<', $gif->created_at)->orderBy('created_at','DESC')->first();
         //returnamos todo la vista

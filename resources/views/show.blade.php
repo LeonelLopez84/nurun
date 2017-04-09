@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+
 <div class="container body">
+
 	<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
 		<div class="col-sm-offset-3 col-md-offset-3 col-xs-12 col-sm-6 col-md-6">
 			<section id="only-one">
@@ -15,6 +17,11 @@
 			</section>
 	</div>
 </div>
+<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
+<div class="col-sm-offset-4 col-md-offset-4 col-xs-4 col-sm-4 col-md-4">
+	@include('partials.socialmedia',['gif',$gif])
+	</div>
+	</div>
 	<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
 		<div class="col-xs-4 col-sm-4 col-md-4">
 			@if(isset($prev))
@@ -33,5 +40,12 @@
 		</div>
 
 	</div>
+
+		<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
+		<div class="col-xs-4 col-sm-4 col-md-4">
+			
+
 	</div>
+	</div
+</div>
 @endsection

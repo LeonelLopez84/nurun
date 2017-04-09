@@ -8108,4 +8108,9 @@ stylize any heading tags withing white-panel below
   position: relative !important;
 }
 
+#front .body .social-buttons a {
+  font-size: 2em;
+  margin: 0px 5px !important;
+}
+
 /*# sourceMappingURL=app.css.map */

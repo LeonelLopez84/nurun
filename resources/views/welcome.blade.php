@@ -9,7 +9,7 @@
        		@foreach($gifs as $gif)
 
 		      <article class="white-panel work-wrapper">
-				<a class="fancybox-media" title="{{$gif->title}}" href="{{url('gifs/'.$gif->gif)}}">
+				<a class="fancybox-media grouped_elements" rel="group1" title="{{$gif->title}}" href="{{url('gifs/'.$gif->gif)}}">
 		      		<img src="{{url('gifs/'.$gif->gif)}}" alt="">
 		      	</a>
 

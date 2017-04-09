@@ -15,6 +15,8 @@ require('./bootstrap');
 
 
 $(function () {
+    
+
     $('.navbar-toggle').click(function () {
         $('.navbar-nav').toggleClass('slide-in');
         $('.side-body').toggleClass('body-slide-in');
@@ -77,6 +79,7 @@ $(function () {
 
 });
 
+////Pinterest GRID
 $(document).ready(function() {
 $('#pinBoot').pinterest_grid({
 no_columns: 4,
