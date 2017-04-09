@@ -2,8 +2,20 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 // Variables
-@import "variables";
+@import "_variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+#admin{
+	@import "_admin";
+	
+		.gif-responsive{
+			width:10% !important;
+			height: auto;
+		}
+}
