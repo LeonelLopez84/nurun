@@ -1,8 +1,7 @@
  @extends('admin.layouts.master')
 
 @section('content')
-<div class="container body">
- 	<div class="row">
+	<div class="row body">
 		<div class="col-sm-12 col-md-12">
 			<div class="panel work-wrapper">
 				<div class="panel-heading"><h3>@yield('title', 'Editar Gif')</h3></div>

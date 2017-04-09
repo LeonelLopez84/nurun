@@ -27,14 +27,16 @@
     <div class="side-menu-container">
         <ul class="nav navbar-nav">
             @if (Auth::guest())
-                     <li><a href="{{ url('/login') }}">Login</a></li>
+                     <li><a href="{{ url('/login') }}" >Login</a></li>
             @else
-                <li>
-                    <a href="#dropdown-2">
-                        &nbsp;<i class="fa fa-user"></i>&nbsp; {{ Auth::user()->name }} 
+            
+                <li class="active">
+                    <a href="#">
+                        &nbsp;<i class="fa fa-user" ></i>&nbsp; {{ Auth::user()->name }} 
                     </a>
                 </li>
-                <li class="active"><a href="{{url('/admin/gifs')}}"><span class="fa fa-list"></span> &nbsp;Lista Gifs</a></li>
+                <li><a href="{{ url('/') }}" target="_blank" ><i class="fa fa-home"></i> Ir al Home</a></li>
+                <li><a href="{{url('/admin/gifs')}}"><span class="fa fa-list"></span> &nbsp;Lista Gifs</a></li>
                  <li>
                      <a href="{{ url('/logout') }}"
                                     onclick="event.preventDefault();

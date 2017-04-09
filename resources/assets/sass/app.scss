@@ -20,6 +20,17 @@
 			height: auto;
 		}
 
+		.pagination {
+			.disabled >	span, li > a {
+				background-color:#333;
+				border-color:#333;
+				color:#fff;
+			}
+			.active > span{
+				background-color: #666 !important;
+    			border-color: #666 !important;	
+			}
+		}
 }
 
 
@@ -56,7 +67,22 @@
 				margin:0px 5px !important;
 			}
 		}
+
+		.pagination {
+			.disabled >	span, li > a {
+				background-color:#333;
+				border-color:#333;
+				color:#fff;
+			}
+			.active > span{
+				background-color: #666 !important;
+    			border-color: #666 !important;	
+			}
+		}
 	}
-	
-		
 }
+
+@import "_ionics";
+@import "_jquery.fancybox";
+@import "_animations.min";
+@import "_style-solid-black";

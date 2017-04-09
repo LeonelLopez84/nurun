@@ -12,16 +12,6 @@
 
     <link href="{{url('css/app.css')}}" rel="stylesheet">
 
-    <link href="{{url('css/ionicons.css')}}" rel="stylesheet" />
-    <!-- FONT AWESOME ICONS STYLES -->
-    <link href="{{url('css/font-awesome.css')}}" rel="stylesheet" />
-    <!-- FANCYBOX POPUP STYLES -->
-    <link href="{{url('js/source/jquery.fancybox.css')}}" rel="stylesheet" />
-    <!-- STYLES FOR VIEWPORT ANIMATION -->
-    <link href="{{url('css/animations.min.css')}}" rel="stylesheet" />
-    <!-- CUSTOM CSS -->
-    <link href="{{url('css/style-solid-black.css')}}" rel="stylesheet" />
-
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
