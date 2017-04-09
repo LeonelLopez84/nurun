@@ -7717,6 +7717,23 @@ button.close {
   /* small screen */
 }
 
+#admin .body {
+  margin-top: 60px;
+}
+
+#admin .body .work-wrapper {
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#admin .body .work-wrapper .form-control {
+  background-color: #ccc;
+}
+
 #admin :focus {
   outline: none;
 }
@@ -7730,8 +7747,11 @@ button.close {
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: #f8f8f8;
-  border-right: 1px solid #e7e7e7;
+  background-color: #333;
+}
+
+#admin .navbar-brand {
+  color: #fff;
 }
 
 #admin .side-menu .navbar {
@@ -7740,23 +7760,32 @@ button.close {
 
 #admin .side-menu .navbar-header {
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #333;
 }
 
 #admin .side-menu .navbar-nav .active a {
-  background-color: transparent;
+  background-color: #666;
   margin-right: -1px;
   border-right: 5px solid #e7e7e7;
+  color: #fff !important;
 }
 
 #admin .side-menu .navbar-nav li {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
+}
+
+#admin .side-menu .navbar-nav li:hover, #admin .side-menu .navbar-nav li:focus {
+  background-color: #666;
 }
 
 #admin .side-menu .navbar-nav li a {
   padding: 15px;
+  color: #fff !important;
+}
+
+#admin .side-menu .navbar-nav li a:hover, #admin .side-menu .navbar-nav li a:focus {
+  background-color: #666;
 }
 
 #admin .side-menu .navbar-nav li a .glyphicon {
@@ -8058,6 +8087,15 @@ stylize any heading tags withing white-panel below
   color: #fff;
 }
 
+#front .body .work-wrapper {
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 #front .body body {
   background-color: #eee;
 }
@@ -8098,6 +8136,11 @@ stylize any heading tags withing white-panel below
   margin-top: -5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+#front .body .work-wrapper {
+  border-radius: 0px !important;
+  border: none !important;
 }
 
 #front .body #only-one {

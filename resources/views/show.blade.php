@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container body">
+<div class="container body" id="work">
 
 	<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
 		<div class="col-sm-offset-3 col-md-offset-3 col-xs-12 col-sm-6 col-md-6">

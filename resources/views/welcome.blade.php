@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container body">
+<div class="container body" id="work">
 <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div"
 	<div class="col-xs-12 col-sm-12 col-md-12">
   		<section id="pinBoot">

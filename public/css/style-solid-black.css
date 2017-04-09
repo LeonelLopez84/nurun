@@ -315,17 +315,18 @@ transition: all 0.5s ease-in-out;
 border: 1px solid rgb(228, 79, 79);
 }
 
+/*
 #work .work-wrapper:hover {
-background-color: transparent;
 border: 1px solid rgb(228, 79, 79);
 
-opacity: .80; /* standard: ff gt 1.5, opera, safari */
--ms-filter: "alpha(opacity=80)"; /* ie 8 */
-filter: alpha(opacity=80); /* ie lt 7 */
--khtml-opacity: .80; /* safari 1.x */
--moz-opacity: .80; /* ff lt 1.5, netscape */
+opacity: .80; /* standard: ff gt 1.5, opera, safari 
+-ms-filter: "alpha(opacity=80)"; /* ie 8 
+filter: alpha(opacity=80); /* ie lt 7 
+-khtml-opacity: .80; /* safari 1.x 
+-moz-opacity: .80; /* ff lt 1.5, netscape 
 
 }
+*/
 
 #work .work-wrapper h4 {
 padding-top: 10px;

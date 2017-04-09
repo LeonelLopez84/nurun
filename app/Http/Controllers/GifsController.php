@@ -28,7 +28,7 @@ class GifsController extends Controller
      */
     public function index()
     {
-        $gifs=Gif::orderBy('created_at','DESC')->paginate(10);
+        $gifs=Gif::orderBy('created_at','DESC')->paginate(5);
         return view("admin.gifs.index",compact('gifs'));
     }
 

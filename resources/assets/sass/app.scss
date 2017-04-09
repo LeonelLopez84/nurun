@@ -12,27 +12,42 @@
 
 
 #admin{
+
 	@import "_admin";
 	
 		.gif-responsive{
 			width:10% !important;
 			height: auto;
 		}
+
 }
 
 
 #front{
 	.body{
+
+		margin-top:60px;
 		a{
 			font-size:1.25em;
 			color:#fff;
 		}
-		margin-top:60px;
+		.work-wrapper {
+			padding: 10px;
+			margin-bottom: 40px;
+			background-color: rgba(255, 255, 255, 0.1);
+			cursor: pointer;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
 		@import "_pinterest";
+
 		#only-one{
 			padding-top:0px !important;
 			.work-wrapper{
 				position:relative !important;
+
 			}
 		}
 		.social-buttons{

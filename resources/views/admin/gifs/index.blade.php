@@ -14,14 +14,16 @@
   </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-          <table class="table">
+          <table class="table table-condensed">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Preview</th>
                 <th>Name</th>
                 <th>Date</th>
-                <th colspan="3">Action</th>
+                <th >Edit</th>
+                <th >Autorize</th>
+                <th >Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -31,16 +33,16 @@
                 <td width="15%"><img class="img-responsive" src="{{url('gifs/'.$gif->gif)}}"></td>
                 <td>{{$gif->title}}</td>
                 <td>{{$gif->created_at}}</td>
-                <td width="5%">
+                <td width="7%">
                   <a class="btn btn-info" href="{{route('gifs.edit',$gif->id)}}"><i class="fa fa-pencil"></i></a>
                 </td>
-                <td width="5%">
+                <td width="7%">
 
                     <a class="btn  {{($gif->autorize==0)?'btn-default':'btn-primary'}} autorize-item" href="{{route('gifs.autorize',$gif->id)}}">
                       <i class="fa {{($gif->autorize==0)?'fa-eye-slash':'fa-eye'}}"></i>
                     </a>
                 </td>
-                <td width="5%">
+                <td width="7%">
                      @include('admin.gifs.delete',['id'=>$gif->id])</i></a>
                 </td>
 
