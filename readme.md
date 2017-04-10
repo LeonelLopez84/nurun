@@ -34,6 +34,6 @@
 
 ## Demo del proyecto
 
-La demo del proyecto se encontrara disponible en la siguiente url: htt://nurun.webstage.com.mx
+La demo del proyecto se encontrara disponible en la siguiente url: http://nurun.webstage.com.mx
 
 
