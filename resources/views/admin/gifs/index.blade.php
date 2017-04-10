@@ -21,9 +21,9 @@
                 <th>Preview</th>
                 <th>Name</th>
                 <th>Date</th>
-                <th >Edit</th>
-                <th >Autorize</th>
-                <th >Delete</th>
+                <th>Edit</th>
+                <th>Authorize</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -43,7 +43,7 @@
                     </a>
                 </td>
                 <td width="7%">
-                     @include('admin.gifs.delete',['id'=>$gif->id])</i></a>
+                     @include('admin.gifs.delete',['id'=>$gif->id])
                 </td>
 
               </tr>
