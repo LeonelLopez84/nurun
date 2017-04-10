@@ -7812,12 +7812,12 @@ button.close {
 }
 
 #admin .side-menu #dropdown > a {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e44f4f !important;
 }
 
 #admin .side-menu #dropdown .panel-body {
   padding: 0;
-  background-color: #f3f3f3;
+  background-color: #333;
 }
 
 #admin .side-menu #dropdown .panel-body .navbar-nav {
@@ -7826,7 +7826,6 @@ button.close {
 
 #admin .side-menu #dropdown .panel-body .navbar-nav li {
   padding-left: 15px;
-  border-bottom: 1px solid #e7e7e7;
 }
 
 #admin .side-menu #dropdown .panel-body .navbar-nav li:last-child {
@@ -8083,6 +8082,34 @@ button.close {
   border-color: #666 !important;
 }
 
+#admin .table-condensed > thead > tr > th {
+  border-bottom: 2px solid #e44f4f !important;
+}
+
+#admin .table-condensed > tbody > tr > td {
+  border-bottom: 1px solid #e44f4f !important;
+}
+
+#front .dropdown-menu {
+  background-color: #333;
+}
+
+#front .dropdown-menu li {
+  background-color: #333;
+}
+
+#front .dropdown-menu li:hover, #front .dropdown-menu li:focus {
+  background-color: #666 !important;
+}
+
+#front .dropdown-menu li a {
+  color: #fff !important;
+}
+
+#front .dropdown-menu li a:hover, #front .dropdown-menu li a:focus {
+  background-color: #666 !important;
+}
+
 #front .body {
   margin-top: 60px;
   /*
@@ -8107,6 +8134,7 @@ stylize any heading tags withing white-panel below
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  border: 1px solid #e44f4f;
 }
 
 #front .body body {
@@ -8153,11 +8181,11 @@ stylize any heading tags withing white-panel below
 
 #front .body .work-wrapper {
   border-radius: 0px !important;
-  border: none !important;
 }
 
 #front .body #only-one {
   padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 #front .body #only-one .work-wrapper {

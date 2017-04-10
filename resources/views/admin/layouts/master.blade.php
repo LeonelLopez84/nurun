@@ -13,8 +13,6 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
-     <link href="{{url('css/style-solid-black.css')}}" rel="stylesheet" />
-
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([

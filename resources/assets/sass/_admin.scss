@@ -103,18 +103,20 @@
   float: right;
 }
 .side-menu #dropdown > a {
-  border-bottom: 1px solid #e7e7e7;
+  
+   border-bottom: 1px solid rgb(228, 79, 79) !important;
+  
 }
 .side-menu #dropdown .panel-body {
   padding: 0;
-  background-color: #f3f3f3;
+  background-color: #333;
 }
 .side-menu #dropdown .panel-body .navbar-nav {
   width: 100%;
 }
 .side-menu #dropdown .panel-body .navbar-nav li {
   padding-left: 15px;
-  border-bottom: 1px solid #e7e7e7;
+  
 }
 .side-menu #dropdown .panel-body .navbar-nav li:last-child {
   border-bottom: none;
